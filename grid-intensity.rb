@@ -5,21 +5,21 @@
 class GridIntensity < Formula
   desc "Get carbon intensity data for electricity grids"
   homepage "https://github.com/thegreenwebfoundation/grid-intensity-go"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/thegreenwebfoundation/grid-intensity-go/releases/download/v0.3.0/grid-intensity_0.3.0_Darwin_arm64.tar.gz"
-      sha256 "198372b61bf53ce496f1a3f675e06bebd3400f10aa29a2f631ad98f6c0964875"
+      url "https://github.com/thegreenwebfoundation/grid-intensity-go/releases/download/v0.4.0/grid-intensity_0.4.0_Darwin_arm64.tar.gz"
+      sha256 "799a711dc43390b80b4f1081a8f8bab960c07869f17b67332dbf70eee8ed92f1"
 
       def install
         bin.install "grid-intensity"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/thegreenwebfoundation/grid-intensity-go/releases/download/v0.3.0/grid-intensity_0.3.0_Darwin_x86_64.tar.gz"
-      sha256 "c2c717d9e2addac57629d05bfe75e52674f06483a0a689f773843f7a2e47dd49"
+      url "https://github.com/thegreenwebfoundation/grid-intensity-go/releases/download/v0.4.0/grid-intensity_0.4.0_Darwin_x86_64.tar.gz"
+      sha256 "bc407c94913ca0546ec7a60e9bc993fc9a05aa4b21cc10da691d457a4fbca223"
 
       def install
         bin.install "grid-intensity"
@@ -29,16 +29,16 @@ class GridIntensity < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/thegreenwebfoundation/grid-intensity-go/releases/download/v0.3.0/grid-intensity_0.3.0_Linux_x86_64.tar.gz"
-      sha256 "1152501e119e0ba01c09be433741785176bf11b22b4cdc0802a72ab6d20085e4"
+      url "https://github.com/thegreenwebfoundation/grid-intensity-go/releases/download/v0.4.0/grid-intensity_0.4.0_Linux_x86_64.tar.gz"
+      sha256 "5880de14045ca8098ad791d59878318eedb8ef24b763c8beb301cae91bb4c682"
 
       def install
         bin.install "grid-intensity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thegreenwebfoundation/grid-intensity-go/releases/download/v0.3.0/grid-intensity_0.3.0_Linux_arm64.tar.gz"
-      sha256 "a44f6fded32ede2d777db5b4ff4b9f5b23097df8905f3ef7d12a96056c349cc8"
+      url "https://github.com/thegreenwebfoundation/grid-intensity-go/releases/download/v0.4.0/grid-intensity_0.4.0_Linux_arm64.tar.gz"
+      sha256 "e0bbf95e6954447620a5a6ba8ea9bfa8831349e79dad822394bef91eee7fffd8"
 
       def install
         bin.install "grid-intensity"
